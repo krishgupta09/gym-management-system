@@ -1,9 +1,10 @@
 import React from 'react'
+import Sidebar from './components/layout/Sidebar'
 
 const App = () => {
   return (
     <div>
-      <h1>Gym Management Running...</h1>
+      <Sidebar />
     </div>
   )
 }
