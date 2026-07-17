@@ -4,7 +4,7 @@ import logo from "../../assets/images/logogym.png";
 
 const Navbar = () => {
   return (
-    <header className="ml-64 h-20 shadow-sm flex items-center justify-between px-8 bg-white">
+    <header className="w-full h-20 shadow-sm flex items-center justify-between px-8 bg-white">
       {/* Search */}
       <div className="flex items-center gap-2 w-80 px-3 py-2 border border-gray-300 rounded-lg">
         <FiSearch className="text-gray-500" />

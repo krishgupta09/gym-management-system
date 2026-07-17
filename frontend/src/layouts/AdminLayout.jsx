@@ -12,7 +12,7 @@ const AdminLayout = () => {
       <div className="flex-1 ml-64">
         {/* Navbar */}
         <Navbar />
-        <main className="p-6 bg-gray-100 min-h-screen">
+        <main className="pb-6 bg-gray-100 min-h-screen">
           <Outlet />
         </main>
       </div>
