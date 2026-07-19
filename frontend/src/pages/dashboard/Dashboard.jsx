@@ -6,6 +6,7 @@ import statData from "../../data/statData.js";
 import RevenueChart from "../../components/dashboard/charts/RevenueChart.jsx";
 import MembershipDataChart from "../../components/dashboard/charts/MembershipDataChart.jsx";
 import RecentActivities from "../../components/dashboard/RecentActivities.jsx";
+import QuickActions from "../../components/dashboard/QuickActions.jsx";
 
 const Dashboard = () => {
   return (
@@ -26,6 +27,7 @@ const Dashboard = () => {
       <RevenueChart />
       <MembershipDataChart />
       <RecentActivities />
+      <QuickActions />
     </div>
   );
 };
