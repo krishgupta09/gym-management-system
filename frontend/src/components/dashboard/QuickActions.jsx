@@ -9,7 +9,7 @@ const QuickActions = () => {
         {quickActions.map((action) => (
           <div
             key={action.id}
-            className="bg-white rounded-lg px-4 py-6 flex flex-col justify-center items-center hover:shadow-lg hover:cursor-pointer hover:-translate-y-2 transition-all duration-200 border border-gray-200"
+            className="bg-white rounded-lg px-4 py-6 flex flex-col justify-center items-center hover:shadow-md hover:bg-gray-50 hover:cursor-pointer hover:-translate-y-2 transition-all duration-200 border border-gray-200"
             onClick={() => console.log(action.title)}
           >
             <div

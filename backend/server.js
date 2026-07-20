@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import connectDB from "./config/db.js";
+import memberRoutes from "./routes/memberRoutes.js";
 
 dotenv.config();
 
@@ -13,7 +15,10 @@ app.get("/", (req, res) => {
   res.send("Gym Management is running...");
 });
 
+app.use("/api/members", memberRoutes)
+
 const PORT = process.env.PORT || 5000;
+await connectDB();
 
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
