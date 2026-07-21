@@ -41,8 +41,13 @@ const memberSchema = new mongoose.Schema(
     emergencyContact: {
       type: String,
     },
+    trainer: {
+      type: mongoose.Types.ObjectId,
+      ref: "Trainer",
+      required:true
+    },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const Member = mongoose.model("Member", memberSchema);
