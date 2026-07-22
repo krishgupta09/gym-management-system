@@ -3,6 +3,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import memberRoutes from "./routes/memberRoutes.js";
+import trainerRoutes from "./routes/trainerRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
 
 dotenv.config();
 
@@ -15,7 +17,9 @@ app.get("/", (req, res) => {
   res.send("Gym Management is running...");
 });
 
-app.use("/api/members", memberRoutes)
+app.use("/api/members", memberRoutes);
+app.use("/api/trainers", trainerRoutes);
+app.use("/api/admin", authRoutes);  
 
 const PORT = process.env.PORT || 5000;
 await connectDB();
